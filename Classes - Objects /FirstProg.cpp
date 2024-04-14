@@ -7,7 +7,14 @@ class Employee{
     int salary;
 
 
+public:
+    Employee(string name, int age, int salary){
+        name = name;
+        age = age;
+        salary = salary;
 
+
+    }
 
 
 
