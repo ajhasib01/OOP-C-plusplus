@@ -17,9 +17,18 @@ public:
     }
 
 
+    void getName(){
+        return name;
+    }
 
+    int getAge(){
 
-};
+        return age;
+    }
+
+    int getsalary(){
+        return salary;
+    }
 
 
 int main(){
