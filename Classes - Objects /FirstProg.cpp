@@ -1,23 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class FirstProg
-{
-private:
-    /* data */
-public:
-    FirstProg(/* args */);
-    ~FirstProg();
-};
+class Employee{
+    string name;
+    int age;
+    int salary;
 
-FirstProg::FirstProg(/* args */)
-{
-}
 
-FirstProg::~FirstProg()
-{
-}
- Employee{
+
+
 
 
 
