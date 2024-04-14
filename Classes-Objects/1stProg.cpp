@@ -28,6 +28,7 @@ public:
 
 int main(){
 
+employee em("Hasib",22,3000);
 
 
 
