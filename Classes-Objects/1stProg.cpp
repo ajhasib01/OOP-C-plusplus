@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class employee(){
+class employee{
     string name;
     int age;
     int salary;
@@ -12,16 +12,16 @@ public:
         return name;
     }
 
-    int age(){
+    int getAge(){
 
         return age;
     }
 
-    int salary(){
+    int getSalary(){
         return salary;
     }
 
-}:
+};
 
 
 
