@@ -30,6 +30,7 @@ int main(){
 
 employee em("Hasib",22,3000);
 
+cout<<em.getAge()<<endl;
 
 
 }
