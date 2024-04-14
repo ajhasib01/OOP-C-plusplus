@@ -33,5 +33,10 @@ public:
 
 int main(){
 
+Employee em("HASIB",22,4000);
+
+cout<<em.getAge<<endl;
+
+
 }
 
