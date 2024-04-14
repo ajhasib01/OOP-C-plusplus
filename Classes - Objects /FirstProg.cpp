@@ -8,35 +8,35 @@ class Employee{
 
 
 public:
-    Employee(string name, int age, int salary){
-        name = name;
-        age = age;
-        salary = salary;
-
+    Employee(string name, int age, int salary):(name(name),age(age),salary(salary){
+    
 
     }
 
 
-    void getName(){
+    string getName(){
         return name;
     }
 
     int getAge(){
 
         return age;
-    }
+    }  
 
     int getsalary(){
         return salary;
     }
-
+};
 
 int main(){
 
-Employee em("HASIB",22,4000);
+Employee em("Hasib",22,3333);
 
-cout<<em.getAge<<endl;
+
+
+cout<<em.getAge()<<endl;
 
 
 }
+
 
