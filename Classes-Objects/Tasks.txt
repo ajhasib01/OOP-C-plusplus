@@ -1,0 +1,17 @@
+# TASKS
+
+1. Create a class that will be used to represent and store information about a Point on a 2D plane.
+    The class should hold two doubles: x and y coordinates of the Point.
+
+
+2. Add a function distance which takes two points as arguments and returns the Euclidean distance between them.
+
+3. Add a method to Point which takes one point as an argument and returns the distance between the point on which the method is run and the point given as arguments:
+     a.distance(b) should return the distance between a and b.
+
+4. Create a function dist which takes an array of Points (alternatively, depending on the language: vector, list, resizable array, ArrayList, or equivalent).
+    The function has to return sum of the distances between each consecutive pairs of points (so I pass an array of four points to dist, it has to return the sum of distance between the first point and the second, and second and third, and third and fourth).
+
+5. Create a class Line which stores two Point. Add a length method which returns the distance between the points.
+
+6. Add Age class. It has to hold an integer from 0 to 150 inclusive. Initialize it to 0. Add a setter and getter for the age, and birthday method which increments the age by 1. Modify the Person class from the lecture, change the age field from int to Age.
