@@ -23,7 +23,7 @@ cout<<myObj1.animal_name<<endl;
 
 Animal myObj2; //Create an object2 of Animal
 myObj2.weight = 5;
-myObj2.animal_name ="Parrot"
+myObj2.animal_name ="Parrot";
 
 cout<<myObj2.weight<<"kg"<<endl;
 cout<<myObj2.animal_name<<endl;
