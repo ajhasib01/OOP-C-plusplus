@@ -8,14 +8,15 @@ class Point{
 public:
 	Point(double coord_x, double coord_y):coord_x(coord_x), coord_y(coord_y){}
 
-double distance(const Point &other)const{
-	double p,q;
+	double distance(const Point &other)const{
+		
+		double p,q;
 
-	p= coord_x - other.coord_x
+		p= coord_x - other.coord_x
 	
-	q= coord_y - other.coord_y
+		q= coord_y - other.coord_y
 	
-	return sqrt((p*p)-(q*q))
+		return sqrt((p*p)-(q*q))
 
 }
 
