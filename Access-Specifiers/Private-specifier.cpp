@@ -14,8 +14,8 @@ int main(){
 Animal myObj; // Create an object of Animal
  
 // Access Attribute and set values.
-myObj.weight_of_Animal = 120; //Not allowed (Because it's private)
-myObj.Animal_name= "Lion"; ////Not allowed (Because it's private)
+myObj.weight_of_Animal = 120; //Not allowed (Because it's private- inaccessible)
+myObj.Animal_name= "Lion"; ////Not allowed (Because it's private- inaccessible)
 
 //Print attribute values
 cout<<myObj.weight_of_Animal<<"kg"<<endl;
