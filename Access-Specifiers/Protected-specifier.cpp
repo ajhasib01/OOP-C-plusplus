@@ -5,7 +5,9 @@ class Animal{  // Base Class
     protected:         //Access Specifier (Protected - No one can Access)
         int Num_of_Animal; //Attribute {int variable}  
        
-
+//Protected access modifier is similar to that of private access modifiers.
+//You can also use it Like private access specifier
+//Use similar code from private and check it just make sure to create a public specifier first.
 
 };
 
