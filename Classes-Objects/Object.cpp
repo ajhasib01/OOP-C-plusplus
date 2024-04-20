@@ -14,8 +14,8 @@ int main(){
 Animal myObj; // Create an object of Animal
  
 // Access Attribute and set values.
-myobj.Num_of_Animal = 10;
-myobj.animal_name = "Lion";
+myObj.Num_of_Animal = 10;
+myObj.animal_name = "Lion";
 
 //Print attribute values
 cout<<myObj.Num_of_Animal<<endl;
