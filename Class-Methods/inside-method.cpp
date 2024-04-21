@@ -5,7 +5,7 @@ class Animal{  // The Class
     public:         //Access Specifier
         void Inside_Method(int num) //Method or function defined inside the class
         {
-            cout<<num<<"Animal"<<endl;
+            cout<<num<<" Animal(s)"<<endl;
         }
 
 
