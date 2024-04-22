@@ -3,7 +3,7 @@
 **Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.**
 
 There are some basic concepts that act as the building blocks of OOPs:
-'''
+
 - Class
 - Objects
 - Encapsulation
@@ -13,4 +13,3 @@ There are some basic concepts that act as the building blocks of OOPs:
 - Dynamic Binding
 - Message Passing
 
-```
