@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/OOP-C-plusplus/Access-Specifiers",
-      "program": "c:/OOP-C-plusplus/Access-Specifiers/build/Debug/outDebug",
+      "cwd": "c:/OOP-C-plusplus/Class-Methods",
+      "program": "c:/OOP-C-plusplus/Class-Methods/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
