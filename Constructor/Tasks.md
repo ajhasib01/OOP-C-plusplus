@@ -1,0 +1,3 @@
+# TASKS
+
+**1.** Create a class `Ipv4Address`. Make it store 4 unsigned chars (perhaps in an array?). Write ***getters and setters***. Create a class `Request` which has a private field origin of type `Ipv4Address`. Write a constructor for `Request` that initializes the origin field. Write a public ***getter for origin***, but no setter for origin. Add a method `log` which prints out the message **"Request of unknown type from a.b.c.d"**, where a, b, c, and d are the values of the 4 unsigned chars from `Ipv4Address`.
