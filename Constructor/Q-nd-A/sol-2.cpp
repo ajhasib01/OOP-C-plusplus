@@ -26,6 +26,8 @@ class HttpsRequest:public Request{
         url = _url;
     }
 
-
+    void log()override{
+        std::cout<<"Http Request of from a.b.c.d to "<< url <<std::endl;
+    }
 
 };
