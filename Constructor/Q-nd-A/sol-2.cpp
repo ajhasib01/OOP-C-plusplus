@@ -31,3 +31,13 @@ class HttpsRequest:public Request{
     }
 
 };
+
+int main(){
+    HttpsRequest req("https://www.codealpha.com");
+
+    req.log();
+
+    return 0;
+
+
+}
