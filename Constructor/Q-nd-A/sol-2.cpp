@@ -14,7 +14,7 @@ public:
 
 class HttpsRequest:public Request{
     std::string url;
-
+public:
     HttpsRequest(std::string _url):url(_url){}
 
     std::string get_url(){
