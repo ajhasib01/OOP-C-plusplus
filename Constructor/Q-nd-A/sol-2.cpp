@@ -13,8 +13,19 @@ public:
 };
 
 class HttpsRequest:public Request{
+    std::string url;
 
-    
+    HttpsRequest(std::string _url):url(_url){}
+
+    std::string get_url(){
+        return url;
+    }
+
+    void set_url(std::string _url){
+
+        url = _url;
+    }
+
 
 
 };
