@@ -12,3 +12,9 @@ public:
 
 };
 
+class HttpsRequest:public Request{
+
+    
+
+
+};
