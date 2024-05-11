@@ -39,3 +39,12 @@ public:
     }
 
 };
+
+int main(){
+    HttpsRequest req("https://www.codealpha.com","HASIB");
+
+    req.log();
+
+    return 0;
+
+}
