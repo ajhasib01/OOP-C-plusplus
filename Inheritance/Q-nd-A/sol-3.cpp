@@ -30,3 +30,9 @@ public:
 
 
 };
+
+int main(){
+    GetRequest req("www.new.com"); // Create a GetRequest object with the provided URL
+    req.log(); // Call the log method of the GetRequest object to print the HTTP GET request message
+
+}
