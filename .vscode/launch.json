@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/OOP-C-plusplus/Inheritance",
-      "program": "c:/OOP-C-plusplus/Inheritance/build/Debug/outDebug",
+      "cwd": "c:/OOP-C-plusplus/Constructor/Q-nd-A",
+      "program": "c:/OOP-C-plusplus/Constructor/Q-nd-A/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
