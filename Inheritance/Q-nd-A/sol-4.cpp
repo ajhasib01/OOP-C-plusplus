@@ -66,3 +66,16 @@ public:
                   << " to " << url << '\t' << payload << std::endl;
     }
 };
+
+int main() 
+{
+    // Create a GetRequest object with specified IP address components and URL, then call log method
+    GetRequest gr(127, 2, 0, 1, "http://newshop.com");
+    gr.log();
+
+    // Create a PostRequest object with specified IP address components, URL, and payload, then call log method
+    PostRequest pr(127, 3, 1, 1, "http://newshop.com/api", "{\"password\": \"secret\"}");
+    pr.log(); // Call log method
+
+    return 0; 
+}
