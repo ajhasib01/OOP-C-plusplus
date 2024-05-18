@@ -44,3 +44,25 @@ public:
                   << " to " << url << std::endl;
     }
 };
+
+class PostRequest: public HttpRequest // Define a class named PostRequest which inherits from HttpRequest
+{
+    std::string url;     // Define a private member variable url to hold the URL
+    std::string payload; // Define a private member variable payload to hold the payload data
+
+public:
+    PostRequest(unsigned char a, unsigned char b, unsigned char c, unsigned char d, std::string url, std::string payload)
+        : HttpRequest(a, b, c, d), url(url), payload(payload) // Constructor for PostRequest, initializes IP address components, url, and payload
+    {}
+
+    void log() override // Override the log method from the base class
+    {
+        // Print an HTTP POST request message including the IP address components, URL, and payload
+        std::cout << "Http POST Request from "
+                  << static_cast<int>(getData(0)) << "."
+                  << static_cast<int>(getData(1)) << "."
+                  << static_cast<int>(getData(2)) << "."
+                  << static_cast<int>(getData(3))
+                  << " to " << url << '\t' << payload << std::endl;
+    }
+};
