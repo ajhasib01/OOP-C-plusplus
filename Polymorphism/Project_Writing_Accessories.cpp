@@ -18,7 +18,15 @@ private:
 public:
     WritingAccessory(str _name, str _type, double _price):name(_name),type(_type),price(_price){}
 
-    
+    virtual str Description() const = 0;
+    virtual str get_type() const{
+
+        return type;
+    }
+
+    virtual double get_price() const{
+        return price;
+    }
 
 
 };
