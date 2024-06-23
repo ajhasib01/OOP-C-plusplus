@@ -11,8 +11,7 @@ private:
     str name;
     str type;
     double price;
-
-
+    
     virtual str Write() const = 0;
 
 public:
