@@ -5,3 +5,10 @@ using namespace std;
 
 using str = std::string;
 
+class WritingAccessory{
+
+
+
+
+    
+};
