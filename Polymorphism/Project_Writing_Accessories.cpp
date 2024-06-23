@@ -28,5 +28,5 @@ public:
         return price;
     }
 
-
+    virtual ~WritingAccessory() = default;
 };
