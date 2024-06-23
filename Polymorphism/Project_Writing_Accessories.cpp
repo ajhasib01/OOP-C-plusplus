@@ -3,3 +3,5 @@
 #include <vector>
 using namespace std;
 
+using str = std::string;
+
