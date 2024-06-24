@@ -11,7 +11,7 @@ private:
     str name;
     str type;
     double price;
-    
+
     virtual str Write() const = 0;
 
 public:
@@ -28,4 +28,11 @@ public:
     }
 
     virtual ~WritingAccessory() = default;
+};
+
+class Pen: public WritingAccessory{
+    
+
+
+
 };
