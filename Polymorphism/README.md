@@ -1,6 +1,7 @@
 # Writing Accessories Project
 
-**Overview**
+**Overview**:
+
 This project demonstrates the implementation of a hierarchy for various writing accessories such as pens, pencils, markers, and highlighters. It showcases the principles of object-oriented programming (OOP), including polymorphism, encapsulation, inheritance, and composition.
 
 **Features**
