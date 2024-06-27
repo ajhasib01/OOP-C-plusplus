@@ -4,3 +4,13 @@
 #include <memory>
 #include <cassert>
 using namespace std;
+
+class WritingAccessory{
+
+
+
+
+
+
+    
+};
