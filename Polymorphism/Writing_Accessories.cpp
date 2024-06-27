@@ -174,3 +174,9 @@ void testPen() {
         cout << "Pen test failed: " << e.what() << endl;
     }
 }
+
+int main(){
+
+testPen()
+
+}
