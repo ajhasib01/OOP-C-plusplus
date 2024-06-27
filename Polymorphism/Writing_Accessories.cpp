@@ -56,3 +56,14 @@ public:
     }
 
 };
+
+class Pen : public WritingAccessory {
+public:
+    Pen(string name, string type, double price, int max_characters)
+        : WritingAccessory(name, type, price, max_characters) {}
+
+    string description() const override {
+        return "Pen (" + type + "). Name: " + name;
+    }
+
+};
