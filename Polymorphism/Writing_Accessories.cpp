@@ -44,6 +44,8 @@ public:
     void refill_characters() {
         current_characters = max_characters;
     }
+    
+    virtual ~WritingAccessory() = default;
 
 
 
