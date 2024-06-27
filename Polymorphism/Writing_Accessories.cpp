@@ -29,6 +29,21 @@ public:
         return type;
     }
 
+    bool can_write(int characters) const {
+        return current_characters >= characters;
+    }
+
+    void use_characters(int characters) {
+        if (characters <= current_characters) {
+            current_characters -= characters;
+        } else {
+            throw runtime_error("Not enough ink/lead to write.");
+        }
+    }
+
+    void refill_characters() {
+        current_characters = max_characters;
+    }
 
 
 
