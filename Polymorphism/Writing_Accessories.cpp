@@ -177,6 +177,6 @@ void testPen() {
 
 int main(){
 
-testPen()
+testPen();
 
 }
