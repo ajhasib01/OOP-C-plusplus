@@ -116,3 +116,23 @@ protected:
         return "Refilling with marker ink.";
     }
 };
+
+class Highlighter : public WritingAccessory {
+public:
+    Highlighter(string name, string type, double price, int max_characters)
+        : WritingAccessory(name, type, price, max_characters) {}
+
+    string description() const override {
+        return "Highlighter (" + type + "). Name: " + name;
+    }
+
+protected:
+    string write_impl() const override {
+        return "Highlighting brightly.";
+    }
+
+    string refill_impl() override {
+        refill_characters();
+        return "Refilling with highlighter ink.";
+    }
+};
