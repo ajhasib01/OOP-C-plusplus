@@ -217,6 +217,18 @@ void testHighlighter() {
     }
 }
 
+void testDocumentWithPen() {
+    try {
+        auto pen = make_unique<Pen>("Pilot", "Gel", 2.99, 100);
+        Document doc("Hello, world!", move(pen));
+        assert(doc.write_document() == "Hello, world! Writing sharply.");
+        assert(doc.refill_accessory() == "Refilling with ink.");
+        cout << "Document with Pen test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Document with Pen test failed: " << e.what() << endl;
+    }
+}
+
 int main(){
 
 testPen();
