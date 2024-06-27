@@ -253,6 +253,18 @@ void testDocumentWithMarker() {
     }
 }
 
+void testDocumentWithHighlighter() {
+    try {
+        auto highlighter = make_unique<Highlighter>("Stabilo", "Chisel Tip", 1.49, 80);
+        Document doc("Highlighting key sections.", move(highlighter));
+        assert(doc.write_document() == "Highlighting key sections. Highlighting brightly.");
+        assert(doc.refill_accessory() == "Refilling with highlighter ink.");
+        cout << "Document with Highlighter test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Document with Highlighter test failed: " << e.what() << endl;
+    }
+}
+
 int main(){
 
 testPen();
