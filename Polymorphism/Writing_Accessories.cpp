@@ -47,6 +47,14 @@ public:
     
     virtual ~WritingAccessory() = default;
 
+    string write() const {
+        return write_impl();
+    }
+
+    string refill() {
+        return refill_impl();
+    }
+
 
 
 
