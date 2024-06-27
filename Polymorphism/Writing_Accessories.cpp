@@ -17,6 +17,9 @@ protected:
     virtual string write_impl() const = 0; 
     virtual string refill_impl() = 0;
 
+public:
+    WritingAccessory(string _name, string _type, double _price, int _max_characters)
+        : name(_name), type(_type), price(_price), max_characters(_max_characters), current_characters(_max_characters) {}
 
 
 
