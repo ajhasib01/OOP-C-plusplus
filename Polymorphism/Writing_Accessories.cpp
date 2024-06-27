@@ -136,3 +136,9 @@ protected:
         return "Refilling with highlighter ink.";
     }
 };
+
+class Document {
+private:
+    string text;
+    unique_ptr<WritingAccessory> accessory;
+};
