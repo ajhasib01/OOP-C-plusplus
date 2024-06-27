@@ -189,6 +189,19 @@ void testPencil() {
     }
 }
 
+void testMarker() {
+    try {
+        Marker marker("Sharpie", "Permanent", 1.99, 50);
+        assert(marker.description() == "Marker (Permanent). Name: Sharpie");
+        assert(marker.write() == "Writing boldly.");
+        assert(marker.refill() == "Refilling with marker ink.");
+        assert(marker.get_price() == 1.99);
+        assert(marker.get_type() == "Permanent");
+        cout << "Marker test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Marker test failed: " << e.what() << endl;
+    }
+}
 
 int main(){
 
