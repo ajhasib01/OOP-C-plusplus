@@ -241,6 +241,18 @@ void testDocumentWithPencil() {
     }
 }
 
+void testDocumentWithMarker() {
+    try {
+        auto marker = make_unique<Marker>("Sharpie", "Permanent", 1.99, 50);
+        Document doc("Marking important points.", move(marker));
+        assert(doc.write_document() == "Marking important points. Writing boldly.");
+        assert(doc.refill_accessory() == "Refilling with marker ink.");
+        cout << "Document with Marker test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Document with Marker test failed: " << e.what() << endl;
+    }
+}
+
 int main(){
 
 testPen();
