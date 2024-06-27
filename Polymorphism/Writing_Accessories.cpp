@@ -96,3 +96,23 @@ protected:
         return "Refilling with lead.";
     }
 };
+
+class Marker : public WritingAccessory {
+public:
+    Marker(string name, string type, double price, int max_characters)
+        : WritingAccessory(name, type, price, max_characters) {}
+
+    string description() const override {
+        return "Marker (" + type + "). Name: " + name;
+    }
+
+protected:
+    string write_impl() const override {
+        return "Writing boldly.";
+    }
+
+    string refill_impl() override {
+        refill_characters();
+        return "Refilling with marker ink.";
+    }
+};
