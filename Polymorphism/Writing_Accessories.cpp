@@ -203,6 +203,20 @@ void testMarker() {
     }
 }
 
+void testHighlighter() {
+    try {
+        Highlighter highlighter("Stabilo", "Chisel Tip", 1.49, 80);
+        assert(highlighter.description() == "Highlighter (Chisel Tip). Name: Stabilo");
+        assert(highlighter.write() == "Highlighting brightly.");
+        assert(highlighter.refill() == "Refilling with highlighter ink.");
+        assert(highlighter.get_price() == 1.49);
+        assert(highlighter.get_type() == "Chisel Tip");
+        cout << "Highlighter test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Highlighter test failed: " << e.what() << endl;
+    }
+}
+
 int main(){
 
 testPen();
