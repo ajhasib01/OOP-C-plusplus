@@ -141,7 +141,7 @@ class Document {
 private:
     string text;
     unique_ptr<WritingAccessory> accessory;
-    
+
 public:
     Document(string _text, unique_ptr<WritingAccessory> _accessory)
         : text(_text), accessory(move(_accessory)) {}
@@ -160,3 +160,17 @@ public:
     }
 
 };
+
+void testPen() {
+    try {
+        Pen pen("Pilot", "Gel", 2.99, 100);
+        assert(pen.description() == "Pen (Gel). Name: Pilot");
+        assert(pen.write() == "Writing sharply.");
+        assert(pen.refill() == "Refilling with ink.");
+        assert(pen.get_price() == 2.99);
+        assert(pen.get_type() == "Gel");
+        cout << "Pen test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Pen test failed: " << e.what() << endl;
+    }
+}
