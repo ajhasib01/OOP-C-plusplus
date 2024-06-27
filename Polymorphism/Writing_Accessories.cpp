@@ -268,7 +268,12 @@ void testDocumentWithHighlighter() {
 int main(){
 
 testPen();
-
+testPencil();
+testMarker();
+testHighlighter();
 testDocumentWithPen();
+testDocumentWithPencil();
+testDocumentWithMarker();
+testDocumentWithHighlighter();
 
 }
