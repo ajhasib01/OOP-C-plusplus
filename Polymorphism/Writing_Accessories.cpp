@@ -229,6 +229,18 @@ void testDocumentWithPen() {
     }
 }
 
+void testDocumentWithPencil() {
+    try {
+        auto pencil = make_unique<Pencil>("Staedtler", "HB", 0.99, 200);
+        Document doc("Drawing a BMW", move(pencil));
+        assert(doc.write_document() == "Drawing a BMW Writing smoothly.");
+        assert(doc.refill_accessory() == "Refilling with lead.");
+        cout << "Document with Pencil test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Document with Pencil test failed: " << e.what() << endl;
+    }
+}
+
 int main(){
 
 testPen();
