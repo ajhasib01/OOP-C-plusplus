@@ -175,6 +175,21 @@ void testPen() {
     }
 }
 
+void testPencil() {
+    try {
+        Pencil pencil("Staedtler", "HB", 0.99, 200);
+        assert(pencil.description() == "Pencil (HB). Name: Staedtler");
+        assert(pencil.write() == "Writing smoothly.");
+        assert(pencil.refill() == "Refilling with lead.");
+        assert(pencil.get_price() == 0.99);
+        assert(pencil.get_type() == "HB");
+        cout << "Pencil test passed!" << endl;
+    } catch (const exception& e) {
+        cout << "Pencil test failed: " << e.what() << endl;
+    }
+}
+
+
 int main(){
 
 testPen();
