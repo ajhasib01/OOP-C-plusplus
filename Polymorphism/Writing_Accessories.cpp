@@ -141,4 +141,22 @@ class Document {
 private:
     string text;
     unique_ptr<WritingAccessory> accessory;
+    
+public:
+    Document(string _text, unique_ptr<WritingAccessory> _accessory)
+        : text(_text), accessory(move(_accessory)) {}
+
+    string write_document() {
+        if (accessory->can_write(text.length())) {
+            accessory->use_characters(text.length());
+            return text + " " + accessory->write();
+        } else {
+            return "Not enough ink/lead to write the document.";
+        }
+    }
+
+    string refill_accessory() const {
+        return accessory->refill();
+    }
+
 };
