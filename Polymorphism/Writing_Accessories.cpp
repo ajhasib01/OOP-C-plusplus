@@ -14,6 +14,9 @@ protected:
     int max_characters;
     int current_characters;
 
+    virtual string write_impl() const = 0; 
+    virtual string refill_impl() = 0;
+
 
 
 
