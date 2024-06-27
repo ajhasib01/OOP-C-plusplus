@@ -21,6 +21,13 @@ public:
     WritingAccessory(string _name, string _type, double _price, int _max_characters)
         : name(_name), type(_type), price(_price), max_characters(_max_characters), current_characters(_max_characters) {}
 
+    virtual string description() const = 0;
+    virtual double get_price() const {
+        return price;
+    }
+    virtual string get_type() const {
+        return type;
+    }
 
 
 
