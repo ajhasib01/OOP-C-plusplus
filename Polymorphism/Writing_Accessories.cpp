@@ -55,8 +55,4 @@ public:
         return refill_impl();
     }
 
-
-
-
-
 };
