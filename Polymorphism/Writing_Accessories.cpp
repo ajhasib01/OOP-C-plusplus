@@ -275,5 +275,5 @@ testDocumentWithPen();
 testDocumentWithPencil();
 testDocumentWithMarker();
 testDocumentWithHighlighter();
-
+cout << "All tests completed!" << endl;
 }
