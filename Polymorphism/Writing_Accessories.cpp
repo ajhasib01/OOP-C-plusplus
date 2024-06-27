@@ -76,3 +76,23 @@ protected:
     }
 
 };
+
+class Pencil : public WritingAccessory {
+public:
+    Pencil(string name, string type, double price, int max_characters)
+        : WritingAccessory(name, type, price, max_characters) {}
+
+    string description() const override {
+        return "Pencil (" + type + "). Name: " + name;
+    }
+
+protected:
+    string write_impl() const override {
+        return "Writing smoothly.";
+    }
+
+    string refill_impl() override {
+        refill_characters();
+        return "Refilling with lead.";
+    }
+};
