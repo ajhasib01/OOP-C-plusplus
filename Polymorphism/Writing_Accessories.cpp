@@ -233,4 +233,6 @@ int main(){
 
 testPen();
 
+testDocumentWithPen();
+
 }
