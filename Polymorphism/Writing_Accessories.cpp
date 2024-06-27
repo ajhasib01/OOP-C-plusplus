@@ -65,5 +65,14 @@ public:
     string description() const override {
         return "Pen (" + type + "). Name: " + name;
     }
+protected:
+    string write_impl() const override {
+        return "Writing sharply.";
+    }
+
+    string refill_impl() override {
+        refill_characters();
+        return "Refilling with ink.";
+    }
 
 };
