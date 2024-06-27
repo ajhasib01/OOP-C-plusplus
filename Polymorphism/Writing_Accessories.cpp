@@ -266,7 +266,7 @@ void testDocumentWithHighlighter() {
 }
 
 int main(){
-
+cout << "Starting tests..." << endl;
 testPen();
 testPencil();
 testMarker();
