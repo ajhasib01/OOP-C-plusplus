@@ -276,4 +276,20 @@ testDocumentWithPencil();
 testDocumentWithMarker();
 testDocumentWithHighlighter();
 cout << "All tests completed!" << endl;
+
+    vector<unique_ptr<WritingAccessory>> items;
+    items.push_back(make_unique<Pen>("Pilot", "Gel", 2.99, 100));
+    items.push_back(make_unique<Pencil>("Staedtler", "HB", 0.99, 200));
+    items.push_back(make_unique<Marker>("Sharpie", "Permanent", 1.99, 50));
+    items.push_back(make_unique<Highlighter>("Stabilo", "Chisel Tip", 1.49, 80));
+
+    cout << "\nDisplaying Inventory:" << endl;
+    for (const auto& item : items) {
+        cout << item->description() << endl;
+    }
+
+    auto pen = make_unique<Pen>("Pilot", "Gel", 2.99, 100);
+    Document doc("Aye Aye Captain!!", move(pen));
+    cout << "Document content: " << doc.write_document() << endl;
+    cout << "Refilling accessory: " << doc.refill_accessory() << endl;
 }
